@@ -1,0 +1,24 @@
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">MitchDesigns</span>
+    </nav>
+  </header>
+
+  <!-- <div  class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div> -->
+  <main *ngIf="model">
+    <div class="card mb-3">
+      <img src="{{model?.Imageurl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{model?.title}}</h5>
+        <p class="card-text">{{model?.description}}</p>
+        <p class="card-text"><small class="text-muted">{{model?.mealPlan}} {{model?.days}}</small></p>
+      </div>
+    </div>
+    <button type="button" (click)="backClicked()" class="btn btn-dark">Back to list</button>
+  </main>
+</body>

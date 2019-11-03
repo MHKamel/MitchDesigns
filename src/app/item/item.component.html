@@ -1,0 +1,32 @@
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">MitchDesigns</span>
+    </nav>
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div *ngFor="let item of mitchdesigns" class="card mb-3" style="max-width: 540px;">
+        <div  class="row no-gutters">
+          <div class="col-md-4">
+            <img src="{{item.Imageurl}}" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body"  (click)="onclickitem(item.id)">
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.agencname}}</p>
+              <p class="card-text"><small class="text-muted">full board</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>

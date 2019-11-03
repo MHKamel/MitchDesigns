@@ -1,0 +1,9 @@
+body{
+  font-family: 'Cairo', sans-serif;
+}
+.cards{
+  Border: #f7f7f7;
+}
+.cards , .card-body{
+ color: #c9c9c9;
+}

@@ -1,0 +1,23 @@
+var express = require('express');
+var router = express.Router();
+var AllData=[{ id: 1, title: 'Hotel Coral Sea Water-World Sharm El Sheikh world',
+agencname: 'Offer from Corsini Travel grupe', rating: '5', description: 'The individual in the Sharm El-Shaikh Charmillion Gardens Hotel - Aqua Park 5 Nabq Bay From 01/09/2019 to 15/09/2019 The individual in the double room is 3950 pounds The individual in the triple room family 3900 pounds From 16/09/2019 to 30/09/2019 The individual in the double room is a family 3650 pounds The individual in the triple room family 3600 pounds Notes : Price for Garden View rooms  For rooms overlooking the swimming pool is added 75 pounds per person per night  Double Familie Sweet is added 200 pounds per person per night  Double family suite overlooking the swimming pool is added 250 pounds per person per nightThe price includes: Accommodation: breakfast + lunch + dinner + drinks + snacks - 03 nights / 04 days Use Aqua Park Price does not include: Transfers Transfers can be provided by air bus until the Sharm El Sheikh position Children: First child under 12 years free of charge The second child less than 6 years free of charge - and from 6 and less than 12 years (50% of the price     per person in the double room) In case of a third child, the double level is calculated Third child less than 3 years free of charge - and from 3 and less 12 years (50% of the price per person in the double family) room is 3950 pounds', mealPlan: 'full board', days: '4', Imageurl: 'assets/img/1.jpg'},
+{ id: 2, title: 'Hotel Strand Beach-Golf Resort Taba Heights',
+agencyname: 'Offer from Corsini Travel', rating: '5', description: 'what is your Sharm El-Shaikh Charmillion Gardens Hotel - Aqua Park 5 Nabq Bay From 01/09/2019 to 15/09/2019 The individual in the double room is 3950 pounds The individual in the triple room family 3900 pounds From 16/09/2019 to 30/09/2019 The individual in the double room is a family 3650 pounds The individual in the triple room family 3600 pounds Notes : Price for Garden View rooms  For rooms overlooking the swimming pool is added 75 pounds per person per night  Double Familie Sweet is added 200 pounds per person per night  Double family suite overlooking the swimming pool is added 250 pounds per person per nightThe price includes: Accommodation: breakfast + lunch + dinner + drinks + snacks - 03 nights / 04 days Use Aqua Park Price does not include: Transfers Transfers can be provided by air bus until the Sharm El Sheikh position Children: First child under 12 years free of charge The second child less than 6 years free of charge - and from 6 and less than 12 years (50% of the price     per person in the double room) In case of a third child, the double level is calculated Third child less than 3 years free of charge - and from 3 and less 12 years (50% of the price per person in the double family)', mealPlan: 'full board', days: '4', Imageurl: 'assets/img/2.jpg'},
+{ id: 3, title: 'Hotel Coral Sea Water-World Sharm El Sheikh world',
+ agencyname: 'Offer from Corsini Travel grupe', rating: '5', description: 'how Sharm El-Shaikh Charmillion Gardens Hotel - Aqua Park 5 Nabq Bay From 01/09/2019 to 15/09/2019 The individual in the double room is 3950 pounds The individual in the triple room family 3900 pounds From 16/09/2019 to 30/09/2019 The individual in the double room is a family 3650 pounds The individual in the triple room family 3600 pounds Notes : Price for Garden View rooms  For rooms overlooking the swimming pool is added 75 pounds per person per night  Double Familie Sweet is added 200 pounds per person per night  Double family suite overlooking the swimming pool is added 250 pounds per person per nightThe price includes: Accommodation: breakfast + lunch + dinner + drinks + snacks - 03 nights / 04 days Use Aqua Park Price does not include: Transfers Transfers can be provided by air bus until the Sharm El Sheikh position Children: First child under 12 years free of charge The second child less than 6 years free of charge - and from 6 and less than 12 years (50% of the price     per person in the double room) In case of a third child, the double level is calculated Third child less than 3 years free of charge - and from 3 and less 12 years (50% of the price per person in the double family) you', mealPlan: 'full board', days: '4', Imageurl: 'assets/img/0.jpg'}]
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.json(AllData)
+});
+
+
+
+
+router.get('/detail/:id', function(req, res, next) {
+  console.log(req.params)
+  var id = +req.params.id
+  var result=AllData.filter(x=>x.id==id)[0]
+  res.json(result)
+});
+module.exports = router;

@@ -1,0 +1,47 @@
+{
+    "data" : {
+    "id" : "121ty35",
+    "title" : "Hotel Coral Sea Water-World Sharm El Sheikh",
+    "agencyName" : "Offer from Corsini Travel",
+    "rating" : "4",
+    "description" : {
+                "Sharm El-Shaikh" : [
+        "Charmillion Gardens Hotel"," Aqua Park 5 Nabq Bay"],
+    "From 01/09/2019 to 15/09/2019" :[
+        "The individual in the double room is 3950 pounds",
+        "The individual in the triple room family 3900 pounds"],
+    "From 16/09/2019 to 30/09/2019" : [
+        "The individual in the double room is a family 3650 pounds",
+        "The individual in the triple room family 3600 pounds"]},
+        "Notes :" :[
+        "- Price for Garden View rooms",
+        "- For rooms overlooking the swimming pool is added 75 pounds per person per night",
+        "- Double Familie Sweet is added 200 pounds per person per night",
+        "- Double family suite overlooking the swimming pool is added 250 pounds per person per night"],
+        "The price includes:" :[
+        "- Accommodation: breakfast + lunch + dinner + drinks + snacks - 03 nights / 04 days",
+        "- Use Aqua Park"],
+        "Price does not include:" :[
+        "- Transfers Transfers can be provided by air bus until the Sharm ElSheikh position"],
+        "Children:" :[
+        "- First child under 12 years free of charge"    ,
+        "- The second child less than 6 years free of charge - and from 6 and less than 12 years (50% of the price per person in the double room)",
+        "- In case of a third child, the double level is calculated",
+        "- Third child less than 3 years free of charge - and from 3 and less"  ,
+                "12 years (50% of the price per person in the double family)"],
+    "mealPlan2" : "full board",
+    "days2" : "four",
+    "ImageUrl2" : "0.jpg",
+    "Children2:" :[
+        "- First child under 12 years free of charge"    ,
+        "- The second child less than 6 years free of charge - and from 6 and less than 12 years (50% of the price per person in the double room)",
+        "- In case of a third child, the double level is calculated",
+        "- Third child less than 3 years free of charge - and from 3 and less"  ,
+                "12 years (50% of the price per person in the double family)"],
+    "mealPlan" : "full board",
+    "days" : "four",
+    "ImageUrl" : "0.jpg"
+    
+    }
+        
+}
